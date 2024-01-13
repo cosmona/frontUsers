@@ -16,7 +16,7 @@ const ShowUsers: React.FC<ShowUsersProps> = (prompt) => {
 
 	useEffect(() => {
 		fetchGlobal(
-			"https://apifantasticfy.onrender.com/users/",
+			"https://apiusers-oomq.onrender.com/users/",
 			"GET",
 			setUsers
 		);

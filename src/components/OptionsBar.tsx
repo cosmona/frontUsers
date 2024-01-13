@@ -17,12 +17,12 @@ const OptionsBar: React.FC<OptionsBarProps> = (promps) => {
 
 	const fetchSync = async () => {
 		const res = await fetchGlobal(
-			"https://apifantasticfy.onrender.com/sync/",
+			"https://apiusers-oomq.onrender.com/sync/",
 			"POST"
 		);
 
 		fetchGlobal(
-			"https://apifantasticfy.onrender.com/users/",
+			"https://apiusers-oomq.onrender.com/users/",
 			"GET",
 			setUsers
 		);
