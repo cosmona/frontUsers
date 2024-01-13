@@ -22,7 +22,7 @@ function App() {
 
 	useEffect(() => {
 		fetchGlobal(
-			"https://apifantasticfy.onrender.com/users/",
+			"https://apiusers-oomq.onrender.com/users/",
 			"GET",
 			setUsers
 		);

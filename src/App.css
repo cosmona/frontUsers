@@ -7,10 +7,15 @@ html {
 .App {
 	text-align: center;
 	margin-bottom: 50px;
+	/* background-image: url("https://as2.ftcdn.net/v2/jpg/02/11/57/29/1000_F_211572979_qFoAFWlfGbp1uEP3J8MkqsVmklGDMA62.jpg"); */
 }
 
 .Article_App {
 	margin-top: 120px;
+}
+
+h1 {
+	color: #0f2a6adb;
 }
 
 .Footer_App {

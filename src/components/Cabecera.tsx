@@ -1,4 +1,4 @@
-import logo from "../media/logo-fantasticfy.jpg";
+import logo from "../media/Logo.jpeg";
 import "./cabecera.css";
 
 function Cabecera() {

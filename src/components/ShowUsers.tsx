@@ -6,6 +6,7 @@ import { ShowUsersProps, UserData } from "../Helpers/interfaces";
 
 //material-ui
 import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 
 //Estilos
 import "./ShowUsers.css";
@@ -29,6 +30,8 @@ const ShowUsers: React.FC<ShowUsersProps> = (prompt) => {
 		});
 	};
 
+	const handleDespliegueMenu = () => {};
+
 	return (
 		<div>
 			<div className="Cards_ShowUsers">
@@ -36,9 +39,22 @@ const ShowUsers: React.FC<ShowUsersProps> = (prompt) => {
 					users.map((user: UserData) => {
 						return (
 							<div className="UserCard_ShowUsers">
-								<div className="Wrapper_ShowUsers">
+								<div className="Avatar_ShowUsers">
+									<img
+										alt="avatar"
+										className="AvatarImg_ShowUsers"
+										src={`https://robohash.org/${user._id}`}
+									/>
+								</div>
+								<AddCircleOutlineIcon
+									className="MenuCard_ShowUsers"
+									onClick={handleDespliegueMenu}
+								/>
+								<div className="Wrapper_ShowUsers Wrapper_Id">
 									<div className="Title_ShowUsers">Id</div>
-									<div>{user._id}</div>
+									<div className="Id_ShowUsers">
+										{user._id}
+									</div>
 								</div>
 								<div className="Wrapper_ShowUsers">
 									<div className="Title_ShowUsers">
