@@ -13,7 +13,6 @@ import AdjustTwoToneIcon from "@mui/icons-material/AdjustTwoTone";
 
 //Estilos
 import "./ShowUsers.css";
-import { Expand } from "@mui/icons-material";
 
 const ShowUsers: React.FC<ShowUsersProps> = (prompt) => {
 	const { users, setUsers } = prompt;
