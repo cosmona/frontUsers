@@ -19,6 +19,63 @@
 	padding: 20px;
 	width: 93vw;
 }
+
+.WrapperMenu_ShowUsers {
+	display: flex;
+	position: relative;
+	top: -46px;
+	color: white;
+}
+/*!DELETE*/
+.MenuCardDelete_ShowUsers {
+	position: relative;
+	top: 0px;
+	left: 35px;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+
+.MenuCardDelete_ShowUsers_Expand {
+	position: relative;
+	top: 0px;
+	left: -35px;
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+}
+/*!EXPAND*/
+.MenuCardExpand_ShowUsers {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	transition: all 0.5s ease-in-out;
+}
+
+.MenuCardExpand_ShowUsers_Expand {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	transform: rotate(360deg);
+	transition: all 0.5s ease-in-out;
+}
+
+/*!EDIT*/
+
+.MenuCardEdit_ShowUsers {
+	position: relative;
+	top: 0px;
+	right: 35px;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+
+.MenuCardEdit_ShowUsers_Expand {
+	position: relative;
+	top: 0px;
+	right: -35px;
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+}
+
 .Wrapper_ShowUsers {
 	position: relative;
 	top: -46px;
