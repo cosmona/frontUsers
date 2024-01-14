@@ -19,11 +19,7 @@ const ShowUsers: React.FC<ShowUsersProps> = (prompt) => {
 	const [expandMenu, setExpandMenu] = useState(false);
 
 	useEffect(() => {
-		fetchGlobal(
-			"https://apiusers-oomq.onrender.com/users/",
-			"GET",
-			setUsers
-		);
+		fetchGlobal("https://apiusers.fly.dev/users/", "GET", setUsers);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 

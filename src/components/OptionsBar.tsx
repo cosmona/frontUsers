@@ -16,16 +16,9 @@ const OptionsBar: React.FC<OptionsBarProps> = (promps) => {
 	const [onClick, setOnclick] = useState(false);
 
 	const fetchSync = async () => {
-		const res = await fetchGlobal(
-			"https://apiusers-oomq.onrender.com/sync/",
-			"POST"
-		);
+		const res = await fetchGlobal("https://apiusers.fly.dev/sync/", "POST");
 
-		fetchGlobal(
-			"https://apiusers-oomq.onrender.com/users/",
-			"GET",
-			setUsers
-		);
+		fetchGlobal("https://apiusers.fly.dev/users/", "GET", setUsers);
 
 		setOnclick(true);
 		setTimeout(() => {

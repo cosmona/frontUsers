@@ -33,7 +33,7 @@ const ModalNew: React.FC<ModalNewProps> = (prompt) => {
 	const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 		fetchGlobal(
-			"https://apiusers-oomq.onrender.com/users/",
+			"https://apiusers.fly.dev/users/",
 			"PUT",
 			setUsers,
 			formData
