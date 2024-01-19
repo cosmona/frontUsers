@@ -14,14 +14,10 @@ html {
 	margin-top: 120px;
 }
 
-h1 {
-	color: #0f2a6adb;
-}
-
 .Footer_App {
 	position: fixed;
 	bottom: 0px;
-	background-color: rgb(5, 60, 52);
+	background-color: rgb(5 160 219 / 75%);
 	color: #f0ffff;
 	width: 100%;
 	z-index: 3;

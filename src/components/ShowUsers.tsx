@@ -41,53 +41,55 @@ const ShowUsers: React.FC<ShowUsersProps> = (prompt) => {
 					users.map((user: UserData) => {
 						return (
 							<div className="UserCard_ShowUsers">
-								<div className="Avatar_ShowUsers">
-									<img
-										alt="avatar"
-										className="AvatarImg_ShowUsers"
-										src={`https://robohash.org/${user._id}`}
-									/>
-								</div>
-								<div className="WrapperMenu_ShowUsers">
-									<div
-										className={
-											expandMenu
-												? "MenuCardDelete_ShowUsers_Expand"
-												: "MenuCardDelete_ShowUsers"
-										}
-									>
-										<DeleteForeverTwoToneIcon
-											fontSize="large"
-											onClick={handleDespliegueMenu}
+								<div>
+									<div className="Avatar_ShowUsers">
+										<img
+											alt="avatar"
+											className="AvatarImg_ShowUsers"
+											src={`https://robohash.org/${user._id}`}
 										/>
 									</div>
-									<div>
-										{expandMenu ? (
-											<div className="MenuCardExpand_ShowUsers">
-												<AddCircleOutlineIcon
-													fontSize="large"
-													onClick={
-														handleDespliegueMenu
-													}
-												/>
-											</div>
-										) : (
-											<div className="MenuCardExpand_ShowUsers_Expand">
-												<AdjustTwoToneIcon fontSize="large" />
-											</div>
-										)}
-									</div>
-									<div
-										className={
-											expandMenu
-												? "MenuCardEdit_ShowUsers_Expand"
-												: "MenuCardEdit_ShowUsers"
-										}
-									>
-										<ModeTwoToneIcon
-											fontSize="large"
-											onClick={handleDespliegueMenu}
-										/>
+									<div className="WrapperMenu_ShowUsers">
+										<div
+											className={
+												expandMenu
+													? "MenuCardDelete_ShowUsers_Expand"
+													: "MenuCardDelete_ShowUsers"
+											}
+										>
+											<DeleteForeverTwoToneIcon
+												fontSize="large"
+												onClick={handleDespliegueMenu}
+											/>
+										</div>
+										<div>
+											{expandMenu ? (
+												<div className="MenuCardExpand_ShowUsers">
+													<AddCircleOutlineIcon
+														fontSize="large"
+														onClick={
+															handleDespliegueMenu
+														}
+													/>
+												</div>
+											) : (
+												<div className="MenuCardExpand_ShowUsers_Expand">
+													<AdjustTwoToneIcon fontSize="large" />
+												</div>
+											)}
+										</div>
+										<div
+											className={
+												expandMenu
+													? "MenuCardEdit_ShowUsers_Expand"
+													: "MenuCardEdit_ShowUsers"
+											}
+										>
+											<ModeTwoToneIcon
+												fontSize="large"
+												onClick={handleDespliegueMenu}
+											/>
+										</div>
 									</div>
 								</div>
 								<div className="Wrapper_ShowUsers Wrapper_Id">

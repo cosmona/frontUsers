@@ -180,22 +180,116 @@
 @media only screen and (min-width: 700px) {
 	.UserCard_ShowUsers {
 		flex-direction: row;
+		display: flex;
+		/* height: 134px; */
+		flex-wrap: wrap;
+	}
+
+	.Avatar_ShowUsers {
+		/* background-color: #05a0db; */
+		/* width: 90px; */
+		/* height: 90px; */
+		/* border-radius: 50%; */
+		/* position: relative; */
+		top: -90px;
+		/* margin: 0 auto; */
+		/* border: 4px solid white; */
+		margin-left: 56px;
+	}
+
+	.Title_ShowUsers {
+		margin-top: 0px;
+		font-size: 18px;
+		color: #05a0db;
+	}
+
+	.Title_ShowUsers + div {
+		background-color: transparent;
+		margin: 0;
+		height: 52px;
+		color: white;
+		padding: 18px;
+		border-radius: 0px;
+		box-shadow: none;
+		font-family: monospace;
+		width: 100%;
+		font-size: 12px;
+		text-shadow: 6px 7px 4px rgb(0 0 0 / 50%);
+	}
+
+	.Wrapper_ShowUsers {
+		/* padding: 10px; */
+		top: 31px;
+		/* display: flex; */
+		/* flex-direction: row; */
+		/* flex-wrap: wrap; */
+		max-width: 168px;
+	}
+
+	.Wrapper_Id {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin: 55px;
+	}
+	/* .UserCard_ShowUsers {
+		flex-direction: row;
+		justify-content: flex-start;
+		display: flex;
+		font-size: 18px;
+		align-items: center;
 		flex-wrap: nowrap;
-		justify-content: space-between;
+		height: 200px;
 	}
 
 	.Wrapper_ShowUsers {
 		padding: 10px;
 	}
 
+	.WrapperMenu_ShowUsers {
+		display: flex;
+		position: relative;
+		top: 28px;
+		color: white;
+		flex-direction: column;
+	}
+
+	.Avatar_ShowUsers {
+		background-color: #05a0db;
+		width: 90px;
+		height: 90px;
+		border-radius: 50%;
+		position: relative;
+		top: -60px;
+		margin: 0 auto;
+		border: 4px solid white;
+	}
+
 	.Title_ShowUsers {
 		margin-top: 5px;
-		font-size: 12px;
+		font-size: 18px;
 		color: #05a0db;
 	}
 
 	.Title_ShowUsers + div {
-		font-size: 10px;
-		margin-left: 0px;
+		background-color: transparent;
+		margin: 0;
+		height: 52px;
+		color: white;
+		padding: 18px;
+		border-radius: 0px;
+		box-shadow: none;
+		font-family: monospace;
+		width: 100%;
+		font-size: 12px;
+		text-shadow: 6px 7px 4px rgb(0 0 0 / 50%);
 	}
+
+	.MenuCardExpand_ShowUsers_Expand {
+		position: relative;
+		top: -84px;
+		left: 0px;
+		transform: rotate(360deg);
+		transition: all 0.5s ease-in-out;
+	} */
 }
